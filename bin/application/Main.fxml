@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="750.0" styleClass="main-pane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="379.0" layoutX="21.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="711.0" />
+      <Label layoutX="425.0" layoutY="295.0" stylesheets="@application.css" text=" Gender :   " textFill="#0f2371">
+         <font>
+            <Font name="Arial Unicode MS" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="390.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-gender-40.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="female" layoutX="574.0" layoutY="296.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="89.0" text="Female">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="male" layoutX="505.0" layoutY="296.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="70.0" text="Male" toggleGroup="$gender" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="45.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="45.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-lock-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="41.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-name-64.png" />
+         </image>
+      </ImageView>
+      <Line endX="90.0" endY="1.52587890625E-5" layoutX="243.0" layoutY="166.0" startX="-159.0" styleClass="shape-line" />
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="390.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-birthday-cake-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="384.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-name-64.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="210.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-welcome" text="Register Here" wrappingWidth="360.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="60.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.984732766187828">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4381091594696045" green="0.557293713092804" blue="0.7631579041481018" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4707903780068729">
+                     <color>
+                        <Color red="0.20638401806354523" green="0.3740375339984894" blue="0.5789473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7697594501718212">
+                     <color>
+                        <Color red="0.06080000102519989" green="0.39874666929244995" blue="0.7599999904632568" opacity="0.8260869383811951" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TextField fx:id="firstname" layoutX="83.0" layoutY="131.0" prefHeight="35.0" prefWidth="283.0" promptText="First Name" styleClass="textfield" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Unicode MS" size="10.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="lastname" layoutX="424.0" layoutY="131.0" prefHeight="35.0" prefWidth="283.0" promptText="Last Name" styleClass="textfield" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Unicode MS" size="10.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="Rusername" layoutX="83.0" layoutY="208.0" prefHeight="35.0" prefWidth="283.0" promptText="Username" styleClass="textfield" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Unicode MS" size="10.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <PasswordField fx:id="Rpassword" layoutX="83.0" layoutY="285.0" prefHeight="35.0" prefWidth="283.0" promptText="Password" styleClass="textfield" stylesheets="@application.css">
+         <font>
+            <Font name="Arial Unicode MS" size="10.0" />
+         </font>
+      </PasswordField>
+      <DatePicker fx:id="birthdate" layoutX="427.0" layoutY="217.0" promptText="Birthdate" styleClass="datepicker" stylesheets="@application.css" />
+      <Button fx:id="btnRegister" layoutX="42.0" layoutY="362.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#register" prefHeight="30.0" prefWidth="200.0" styleClass="btn-login" stylesheets="@application.css" text="R E G I S T E R">
+         <font>
+            <Font name="Agency FB" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelRegister" layoutX="56.0" layoutY="419.0" styleClass="label-register" stylesheets="@application.css" text=" " />
+      <Button fx:id="btnBackToLogin" layoutX="536.0" layoutY="413.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="30.0" prefWidth="200.0" styleClass="btn-login" stylesheets="@application.css" text="BACK TO LOGIN">
+         <font>
+            <Font name="Agency FB" size="15.0" />
+         </font>
+      </Button>
+      <Line endX="90.0" endY="1.52587890625E-5" layoutX="583.0" layoutY="166.0" startX="-159.0" styleClass="shape-line" />
+      <Line endX="90.0" endY="1.52587890625E-5" layoutX="243.0" layoutY="320.0" startX="-159.0" styleClass="shape-line" />
+      <Line endX="90.0" endY="1.52587890625E-5" layoutX="242.0" layoutY="244.0" startX="-159.0" styleClass="shape-line" />
+      <Label fx:id="askUsername" layoutX="75.0" layoutY="252.0" textFill="#cf3535" />
+      <Button fx:id="btnRYES" layoutX="225.0" layoutY="251.0" mnemonicParsing="false" onAction="#usernameYES" prefHeight="20.0" prefWidth="50.0" styleClass="btn-view" stylesheets="@application.css" text="Yes" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRNO" layoutX="290.0" layoutY="251.0" mnemonicParsing="false" onAction="#usernameNO" prefHeight="20.0" prefWidth="50.0" styleClass="btn-delete" text="No" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="askPassword" layoutX="85.0" layoutY="330.0" text=" " textFill="#cf3535" />
+      <Button fx:id="btnPYES" layoutX="235.0" layoutY="330.0" mnemonicParsing="false" onAction="#PasswordYES" prefHeight="20.0" prefWidth="50.0" styleClass="btn-view" stylesheets="@application.css" text="Yes" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPNO" layoutX="300.0" layoutY="330.0" mnemonicParsing="false" onAction="#PasswordNO" prefHeight="20.0" prefWidth="50.0" styleClass="btn-delete" text="No" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Pane fx:id="paneRegistered" layoutX="25.0" layoutY="450.0" prefHeight="32.0" prefWidth="239.0" styleClass="pane-registered" stylesheets="@application.css">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" text="Succesfully Registered">
+               <font>
+                  <Font name="Ebrima" size="17.0" />
+               </font>
+            </Label>
+            <ImageView blendMode="ADD" fitHeight="40.0" fitWidth="30.0" layoutX="195.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/check.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="PaneLogin" layoutX="300.0" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="91.0" layoutX="178.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/user2.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="318.0" layoutX="51.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="342.0" />
+            <Text layoutX="158.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-welcome" text="LOGIN">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="45.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.4381091594696045" green="0.557293713092804" blue="0.7631579041481018" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.4707903780068729">
+                           <color>
+                              <Color red="0.20638401806354523" green="0.3740375339984894" blue="0.5789473652839661" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7697594501718212">
+                           <color>
+                              <Color red="0.06080000102519989" green="0.39874666929244995" blue="0.7599999904632568" opacity="0.8260869383811951" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <TextField fx:id="username" layoutX="105.0" layoutY="177.0" prefHeight="35.0" prefWidth="283.0" promptText="Username" styleClass="textfield" stylesheets="@application.css">
+               <font>
+                  <Font name="Arial Unicode MS" size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></TextField>
+            <PasswordField fx:id="password" layoutX="105.0" layoutY="241.0" prefHeight="35.0" prefWidth="283.0" promptText="Password" styleClass="textfield" stylesheets="@application.css">
+               <font>
+                  <Font name="Arial Unicode MS" size="10.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnLogin" layoutX="124.0" layoutY="303.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="200.0" styleClass="btn-login" stylesheets="@application.css" text="L O G I N">
+               <font>
+                  <Font name="Agency FB Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGoToRegister" layoutX="256.0" layoutY="400.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#goToRegister" prefHeight="30.0" prefWidth="125.0" styleClass="btn-login" stylesheets="@application.css" text="REGISTER HERE">
+               <font>
+                  <Font name="Agency FB" size="15.0" />
+               </font>
+            </Button>
+            <Line endX="79.0" endY="1.52587890625E-5" layoutX="262.0" layoutY="212.0" startX="-159.0" styleClass="shape-line" />
+            <Line endX="79.0" layoutX="263.0" layoutY="276.0" startX="-159.0" styleClass="shape-line" />
+            <Label layoutX="57.0" layoutY="400.0" prefHeight="30.0" prefWidth="182.0" text="Don't have an account ?" textFill="#19394e">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="65.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/icons8-lock-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="67.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnClose" fitHeight="30.0" fitWidth="30.0" layoutX="416.0" layoutY="3.0" onMouseClicked="#closeApp" pickOnBounds="true" preserveRatio="true" styleClass="btn-close">
+               <image>
+                  <Image url="@Images/cancel.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelInvalid" layoutX="105.0" layoutY="357.0" text="Invalid Username or Password" textFill="RED" visible="false">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Pane fx:id="paneLoggedin" layoutX="103.0" layoutY="347.0" prefHeight="32.0" prefWidth="239.0" styleClass="pane-registered" stylesheets="@application.css" visible="false">
+               <children>
+                  <Label fx:id="statusLogin" layoutX="14.0" layoutY="2.0" prefHeight="26.0" prefWidth="173.0" text="Succesfully Logged In">
+                     <font>
+                        <Font name="Ebrima" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="statusLoginImage" blendMode="ADD" fitHeight="40.0" fitWidth="30.0" layoutX="195.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/check.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets top="-3.0" />
+               </opaqueInsets>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="paneImage" prefHeight="450.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="450.0" fitWidth="300.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Sidebar.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

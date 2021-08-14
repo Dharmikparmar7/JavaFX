@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="904.0" styleClass="dashboard-pane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <children>
+      <ScrollPane layoutX="41.0" layoutY="100.0" styleClass="pane-scroll" stylesheets="@application.css">
+         <content>
+            <FlowPane fx:id="flowPane" hgap="15.0" prefHeight="458.0" prefWidth="825.0" styleClass="pane-scroll" stylesheets="@application.css" vgap="20.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="btnClose" fitHeight="30.0" fitWidth="30.0" layoutX="861.0" layoutY="13.0" onMouseClicked="#closeApp" pickOnBounds="true" preserveRatio="true" styleClass="btn-close">
+         <image>
+            <Image url="@Images/cancel.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="320.0" layoutY="3.0" prefHeight="57.0" prefWidth="311.0" styleClass="txt-dashboard" stylesheets="@application.css" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="55.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

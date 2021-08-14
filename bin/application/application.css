@@ -1,0 +1,156 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*background-image: linear-gradient(to bottom, #1f36aa, #1a2e97, #152785, #102073, #0a1962, #04276e, #00357a, #004385, #006caa, #0094c1, #00bcc9, #2be2c6);*/
+/*background-image: radial-gradient(circle, #1f36aa, #1a2e97, #152785, #102073, #0a1962, #04276e, #00357a, #004385, #006caa, #0094c1, #00bcc9, #2be2c6);*/
+/*#1F36AA Blue */
+/*#04104C DBlue*/
+/*#2BE2C6*/
+
+.textfield
+{
+	-fx-background-color: transparent;
+	-fx-background-radius: 20px;
+	-fx-prompt-text-fill: linear-gradient(to left top, #1f36aa, #182c91, #122279, #0a1962, #04104c);
+	-fx-font-size: 15px;
+}
+
+.btn-login
+{
+	-fx-background-color : linear-gradient(to left top, #1f36aa, #182c91, #122279, #0a1962, #04104c);
+	-fx-background-radius: 20px;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+/*Register*/
+.btn-login:hover
+{
+	-fx-background-color: #2BE2C6;
+}
+
+/*Register*/
+.txt-welcome
+{
+	-fx-text-fill : linear-gradient(to left top, #1f36aa, #182c91, #122279, #0a2062, #04104c);
+}
+
+/*Register*/
+.datepicker
+{
+	-fx-background-color : linear-gradient(to left top, #1f36aa, #182c91, #122279, #0a1962, #04104c);
+	-fx-text-fill : white;
+}
+
+/*Dashboard*/
+.dashboard-pane
+{
+	-fx-background-color : linear-gradient(to left bottom, #1f36aa, #2f4cb8, #4162c4, #5377d0, #688cda, #649de6, #64aef0, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	-fx-background-radius : 20 20 20 20;
+	-fx-border-radius : 20 20 20 20;
+}
+
+/*box*/
+.btn-view
+{
+	-fx-background-color : linear-gradient(to left top, #1f36aa, #182c91, #122279, #0a1962, #04104c);
+	-fx-background-radius: 20px;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+/*box*/
+.btn-view:hover
+{
+	-fx-background-color: #2BE2C6;
+}
+
+/*box*/
+.btn-delete
+{
+	-fx-background-color : red; 
+	-fx-background-radius: 20px;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+/*box*/
+.btn-delete:hover
+{
+	-fx-background-color: #2BE2C6;
+}
+
+/*box*/
+.pane-box
+{
+	-fx-background-radius : 20 20 20 20;
+	-fx-border-radius : 20 20 20 20;
+	-fx-background-color: rgb(255,255,255, 0.8);
+}
+
+/*box*/
+.txt-username
+{
+	-fx-text-fill : linear-gradient(to left top, #1f11aa, #182c90, #133379, #0a1962, #04104c);
+}
+
+.pane-registered
+{
+	-fx-background-color : linear-gradient(to left bottom, #1f36aa, #2f4cb8, #4162c4, #5377d0, #688cda, #649de6, #64aef0, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	-fx-background-radius : 20 20 20 20;
+	-fx-border-radius : 20 20 20 20;
+}
+
+.label-register
+{
+	-fx-text-fill : red;
+	-fx-font-size : 20px; 
+}
+
+.pane-scroll
+{
+	-fx-background : transparent;
+	-fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: white;
+}
+
+.txt-1
+{
+	-fx-text-fill: white;
+}
+
+.pane-details
+{
+	-fx-background-color : linear-gradient(to right top, #b5309f, #aa4db0, #9e63be, #9475c6, #8d84cb);
+	-fx-background-radius : 20 20 20 20;
+	-fx-border-radius : 20 20 20 20;
+}
+
+.box-image
+{
+	-fx-background-radius : 20 20 20 20;
+	-fx-border-radius : 20 20 20 20;
+}
